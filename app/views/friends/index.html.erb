@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Friends" %>
+
+<table class="table table-hover table-bordered">
+  <thead class="table-dark">
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Notes</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @friends %> <!-- This renders each friend via the updated partial -->
+  </tbody>
+</table>
+
+<%= link_to "New friend", new_friend_path, class: "btn btn-secondary" %>
