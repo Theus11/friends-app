@@ -12,29 +12,25 @@
   <% end %>
 
   <div class="mb-3">
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name, class:"form-control" %>
+    <%= form.text_field :first_name, class:"form-control", placeholder:"First Name" %>
   </div>
 
   <div class="mb-3">
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name, class:"form-control" %>
+    <%= form.text_field :last_name, class:"form-control", placeholder:"Last Name" %>
   </div>
 
   <div class="mb-3">
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email, class:"form-control" %>
+    <%= form.text_field :email, class:"form-control", placeholder:"Email" %>
   </div>
 
   <div class="mb-3">
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone, class:"form-control" %>
+    <%= form.text_field :phone, class:"form-control", placeholder:"Phone" %>
   </div>
 
   <div class="mb-3">
-    <%= form.label :notes, style: "display: block" %>
-    <%= form.text_field :notes, class:"form-control" %>
+    <%= form.text_field :notes, class:"form-control", placeholder:"Notes" %>
   </div>
+<br/>
 
   <div class="mb-3">
     <%= form.submit class:"btn btn-dark" %>
